@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>New Record</title>
+    </head>
+    <body>
+        <br/>
+        <p><b>New Booking Record</b></p>
+        <form action="SaveServlet" method="POST">
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td>Date :</td>
+                        <td><input type="text" name="date" value="" size="25" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Time :</td>
+                        <td><input type="text" name="Time" value="" size="40" /></td>
+                    </tr>
+                    <tr>
+                        <td>Category Sport : </td>
+                        <td><input type="text" name="categorysport" value="" size="40" /></td>
+                    </tr>
+                    <tr>
+                        <td>Court Name : </td>
+                        <td><input type="text" name="courtname" value="" size="40" /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Email : </td>
+                        <td><input type="text" name="email" value="" size="40" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="hidden" name="action" value="insert"/></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Submit" name="submit"/>
+                            <input type="reset" value="Cancel" name="cancel"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>         
+        </form>
+        
+        <br/>
+        <a href="ViewServlet">view booking</a>
+    </body>
+</html>
+
+
